@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #ff566dd8, #f5d4d8);
+
+}
+.container{
+    max-width: 550px;
+    width: 100%;
+    max-height: 800px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+    padding: 25px 30px;
+}
+.container .title{
+    font-size: 30px;
+    font-weight: 900;
+    position: relative;
+}
+.container .title::before{ 
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    /* background: #ff566dd8; */
+    background: linear-gradient(135deg, #ff566dd8, #f5d4d8);
+} 
+.container form .details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin: 20px 0 12px 0;
+}
+form .details .input-det{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.details .input-det .det{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.details .input-det input{
+    height: 45px;
+    width: 100%;
+    padding-left: 15px;
+    outline: none;;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+form .blood-group .grp-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+.blood-group .groups{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+.blood-group .groups label{
+    display: flex;
+    align-items: center;
+}
+.blood-group .groups .dot-grp1, .dot-grp2, .dot-grp3, .dot-grp4, .dot-grp5, .dot-grp6, .dot-grp7, .dot-grp8{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #d9d9d9;
+    margin-right: 5px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+#dot-1:checked ~ .groups label .dot-grp1,
+#dot-2:checked ~ .groups label .dot-grp2,
+#dot-3:checked ~ .groups label .dot-grp3,
+#dot-4:checked ~ .groups label .dot-grp4,
+#dot-5:checked ~ .groups label .dot-grp5,
+#dot-6:checked ~ .groups label .dot-grp6,
+#dot-7:checked ~ .groups label .dot-grp7,
+#dot-8:checked ~ .groups label .dot-grp8{
+    border-color: #d9d9d9;
+    background: blueviolet;
+}
+form input[type="radio"]{
+    display: none;
+}
+form .gender .gen-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+.gender .catogary{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px 0;
+}
+.gender .catogary label{
+    display: flex;
+    align-items: center;
+}
+.gender .catogary .dot1, .dot2, .dot3{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #d9d9d9;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+#gdot-1:checked ~ .catogary label .dot1,
+#gdot-2:checked ~ .catogary label .dot2,
+#gdot-3:checked ~ .catogary label .dot3{
+    border-color: #d9d9d9;
+    background: blueviolet;
+}
+form input[type="radio"]{
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin-top: 45px;
+    margin-bottom: 15Spx;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    background: blueviolet;
+}
+form .button input:hover{
+    background: linear-gradient(135deg, #f5d4d8, #ff566dd8);
+    transition: 0.3s;
+}

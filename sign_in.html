@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign_in.css">
+    <title>Sign in</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <form action="#">
+            <div class="details">
+                <div class="input-det">
+                    <span class="det">Full Name : </span>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-det">
+                    <span class="det">Email : </span>
+                    <input type="text" placeholder="Enter your Email" required>
+                </div>
+                <div class="input-det">
+                    <span class="det">Phone No. : </span>
+                    <input type="number" placeholder="Enter a valid phone No." required>
+                </div>
+                <div class="input-det">
+                    <span class="det">Address : </span>
+                    <input type="text" placeholder="Enter the Address" required>
+                </div>
+            </div>
+            <div class="blood-group">
+                <span class="grp-title">Blood Group:</span>
+                <input type="radio" name="blood group" id="dot-1">
+                <input type="radio" name="blood group" id="dot-2">
+                <input type="radio" name="blood group" id="dot-3">
+                <input type="radio" name="blood group" id="dot-4">
+                <input type="radio" name="blood group" id="dot-5">
+                <input type="radio" name="blood group" id="dot-6">
+                <input type="radio" name="blood group" id="dot-7">
+                <input type="radio" name="blood group" id="dot-8">
+                <div class="groups">
+                    <label for="dot-1">
+                        <span class="dot-grp1"></span>
+                        <span class="grp">O+</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot-grp2"></span>
+                        <span class="grp">O-</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot-grp3"></span>
+                        <span class="grp">A+</span>
+                    </label>
+                    <label for="dot-4">
+                        <span class="dot-grp4"></span>
+                        <span class="grp">A-</span>
+                    </label>
+                    
+                    <label for="dot-5">
+                        <span class="dot-grp5"></span>
+                        <span class="grp">B+</span>
+                    </label>
+                    <label for="dot-6">
+                        <span class="dot-grp6"></span>
+                        <span class="grp">B-</span>
+                    </label>
+                    <label for="dot-7">
+                        <span class="dot-grp7"></span>
+                        <span class="grp">AB+</span>
+                    </label>
+                    <label for="dot-8">
+                        <span class="dot-grp8"></span>
+                        <span class="grp">AB-</span>
+                    </label>
+                </div>
+            </div>
+            <div class="gender">               
+                <span class="gen-title">Gender:</span>
+                <input type="radio" name="gender" id="gdot-1">
+                <input type="radio" name="gender" id="gdot-2">
+                <input type="radio" name="gender" id="gdot-3"> 
+                <div class="catogary">
+                    <label for="gdot-1">
+                        <span class="dot1"></span>
+                        <span class="gen">Male</span>
+                    </label>
+                    <label for="gdot-2">
+                        <span class="dot2"></span>
+                        <span class="gen">Female</span>
+                    </label>
+                    <label for="gdot-3">
+                        <span class="dot3"></span>
+                        <span class="gen">Prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" onclick='alert("Welcome Donor")' value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
