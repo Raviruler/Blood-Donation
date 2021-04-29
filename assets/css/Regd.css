@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #ff566dd8, #f5d4d8);
+
+}
+.container{
+    max-width: 550px;
+    width: 100%;
+    max-height: 800px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+    padding: 25px 30px;
+}
+.container .title{
+    font-size: 30px;
+    font-weight: 900;
+    position: relative;
+}
+.container .title::before{ 
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 10em;
+    /* background: #ff566dd8; */
+    background: linear-gradient(135deg, #ff566dd8, #f5d4d8);
+} 
+.container form .details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin: 20px 0 12px 0;
+}
+form .details .input-det{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.details .input-det .det{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.blood-group,.gender{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.details .input-det input{
+    height: 45px;
+    width: 100%;
+    padding-left: 15px;
+    outline: none;;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+form .blood-group .grp-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+.blood-group .groups{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+.blood-group .groups label{
+    display: flex;
+    align-items: center;
+}
+.required{
+    color: red;
+    font-size:small;
+}
+form .button{
+    height: 45px;
+    margin-top: 45px;
+    margin-bottom: 15Spx;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    background: blueviolet;
+}
+form .button input:hover{
+    background: linear-gradient(135deg, #f5d4d8, #ff566dd8);
+    transition: 0.3s;
+}

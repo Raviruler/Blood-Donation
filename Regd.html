@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/Regd.css">
+    <title>Doner Registration</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Doner Registration</div>
+        <form action="#">
+            <div class="details">
+                <div class="input-det">
+                    <span class="det">First Name : <span class="required"> <sup>*</sup> </span> </span> 
+                    <input type="text" placeholder="Enter your first name" required>
+                </div>
+                <div class="input-det">
+                    <span class="det">Last Name : <span class="required"> <sup>*</sup> </span> </span>
+                    <input type="text" placeholder="Enter your last name" required>
+                </div>
+                <div class="input-det">
+                    <span class="det">Email : <span class="required"> <sup>*</sup> </span>  </span>
+                    <input type="email" placeholder="Enter your Email Address" required>
+                </div>
+                <div class="input-det">
+                    <span class="det">Phone No. : <span class="required"> <sup>*</sup> </span>  </span>
+                    <input type="tel" placeholder="Enter a valid phone No." required>
+                </div>
+                <div class="input-det">
+                    <span class="det">Address : </span>
+                    <!-- <input type="text" placeholder="Enter the Address" required> -->
+                    <textarea  cols="50" rows="4" placeholder="Enter Your Address(Optional)"></textarea>
+                </div>
+            </div>
+            <div class="blood-group">
+                <label for="Blood-Groups">Select your Blood Group  :  <span class="required"> <sup>*</sup> </span>  </label>
+                <select id="Blood-Groups">
+                  <option value="A+">A+</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                </select>
+            </div>
+            <br>
+            <div class="gender">               
+                <label for="Blood-Groups">Select your Gender  :  <span class="required"> <sup>*</sup> </span>  </label>
+                <select id="gen">
+                  <option value="M">Male</option>
+                  <option value="F">Female</option>
+                  <option value="O">Other</option>
+                </select>
+            </div>
+            <div class="button">
+                <input type="submit"  value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
