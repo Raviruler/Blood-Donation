@@ -5,98 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sign_in.css">
-    <title>Sign in</title>
+    <title>Doner Registration</title>
 </head>
 <body>
     <div class="container">
-        <div class="title">Registration</div>
+        <div class="title">Doner Registration</div>
         <form action="#">
             <div class="details">
                 <div class="input-det">
-                    <span class="det">Full Name : </span>
-                    <input type="text" placeholder="Enter your full name" required>
+                    <span class="det">First Name : <span class="required"> <sup>*</sup> </span> </span> 
+                    <input type="text" placeholder="Enter your first name" required>
                 </div>
                 <div class="input-det">
-                    <span class="det">Email : </span>
-                    <input type="text" placeholder="Enter your Email" required>
+                    <span class="det">Last Name : <span class="required"> <sup>*</sup> </span> </span>
+                    <input type="text" placeholder="Enter your last name" required>
                 </div>
                 <div class="input-det">
-                    <span class="det">Phone No. : </span>
-                    <input type="number" placeholder="Enter a valid phone No." required>
+                    <span class="det">Email : <span class="required"> <sup>*</sup> </span>  </span>
+                    <input type="email" placeholder="Enter your Email Address" required>
+                </div>
+                <div class="input-det">
+                    <span class="det">Phone No. : <span class="required"> <sup>*</sup> </span>  </span>
+                    <input type="tel" placeholder="Enter a valid phone No." required>
                 </div>
                 <div class="input-det">
                     <span class="det">Address : </span>
-                    <input type="text" placeholder="Enter the Address" required>
+                    <!-- <input type="text" placeholder="Enter the Address" required> -->
+                    <textarea  cols="50" rows="4" placeholder="Enter Your Address(Optional)"></textarea>
                 </div>
             </div>
             <div class="blood-group">
-                <span class="grp-title">Blood Group:</span>
-                <input type="radio" name="blood group" id="dot-1">
-                <input type="radio" name="blood group" id="dot-2">
-                <input type="radio" name="blood group" id="dot-3">
-                <input type="radio" name="blood group" id="dot-4">
-                <input type="radio" name="blood group" id="dot-5">
-                <input type="radio" name="blood group" id="dot-6">
-                <input type="radio" name="blood group" id="dot-7">
-                <input type="radio" name="blood group" id="dot-8">
-                <div class="groups">
-                    <label for="dot-1">
-                        <span class="dot-grp1"></span>
-                        <span class="grp">O+</span>
-                    </label>
-                    <label for="dot-2">
-                        <span class="dot-grp2"></span>
-                        <span class="grp">O-</span>
-                    </label>
-                    <label for="dot-3">
-                        <span class="dot-grp3"></span>
-                        <span class="grp">A+</span>
-                    </label>
-                    <label for="dot-4">
-                        <span class="dot-grp4"></span>
-                        <span class="grp">A-</span>
-                    </label>
-                    
-                    <label for="dot-5">
-                        <span class="dot-grp5"></span>
-                        <span class="grp">B+</span>
-                    </label>
-                    <label for="dot-6">
-                        <span class="dot-grp6"></span>
-                        <span class="grp">B-</span>
-                    </label>
-                    <label for="dot-7">
-                        <span class="dot-grp7"></span>
-                        <span class="grp">AB+</span>
-                    </label>
-                    <label for="dot-8">
-                        <span class="dot-grp8"></span>
-                        <span class="grp">AB-</span>
-                    </label>
-                </div>
+                <label for="Blood-Groups">Select your Blood Group  :  <span class="required"> <sup>*</sup> </span>  </label>
+                <select id="Blood-Groups">
+                  <option value="A+">A+</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                </select>
             </div>
+            <br>
             <div class="gender">               
-                <span class="gen-title">Gender:</span>
-                <input type="radio" name="gender" id="gdot-1">
-                <input type="radio" name="gender" id="gdot-2">
-                <input type="radio" name="gender" id="gdot-3"> 
-                <div class="catogary">
-                    <label for="gdot-1">
-                        <span class="dot1"></span>
-                        <span class="gen">Male</span>
-                    </label>
-                    <label for="gdot-2">
-                        <span class="dot2"></span>
-                        <span class="gen">Female</span>
-                    </label>
-                    <label for="gdot-3">
-                        <span class="dot3"></span>
-                        <span class="gen">Prefer not to say</span>
-                    </label>
-                </div>
+                <label for="Blood-Groups">Select your Gender  :  <span class="required"> <sup>*</sup> </span>  </label>
+                <select id="gen">
+                  <option value="M">Male</option>
+                  <option value="F">Female</option>
+                  <option value="O">Other</option>
+                </select>
             </div>
             <div class="button">
-                <input type="submit" onclick='alert("Welcome Donor")' value="Register">
+                <input type="submit"  value="Register">
             </div>
         </form>
     </div>
