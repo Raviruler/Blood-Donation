@@ -11,10 +11,12 @@ body{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    
+    /* background: linear-gradient(135deg, #ff566dd8, #f5d4d8); */
+
     background: #e53935;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 
 }
@@ -61,7 +63,7 @@ form .details .input-det{
 .blood-group,.gender{
     display: block;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin: 20px 0 3px 0;
 }
 .details .input-det input{
     height: 45px;
@@ -94,7 +96,6 @@ form .button{
     height: 45px;
     margin-top: 45px;
     margin-bottom: 15Spx;
-    
 }
 form .button input{
     height: 100%;

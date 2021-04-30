@@ -15,10 +15,12 @@ Description: This Template is created for Youtubers
 
 .logo{
   padding-top: 7px;
-  padding-left: 0%; }
+  padding-left: 0%;
+  padd
+}
   
 img {
-  max-width: 100%; }
+  max-width: 100% ; }
 
 a {
   text-decoration: none;
@@ -355,7 +357,7 @@ header {
   .donation-care p {
     padding: 10px;
     padding-top: 0px;
-    text-align: justify;
+    /* text-align: justify; */
     font-size: .85rem; }
   .donation-care i {
     font-size: 13px;
@@ -385,9 +387,13 @@ header {
     font-size: .85rem;
     color: #000;
     margin-bottom: 10px;
-    text-align: justify; }
+    text-align: justify;
+    padding-top: 25px; }
   .about-us .image img {
-    margin-top: 30px; }
+    margin-top: 30px;
+    width: 80%;
+    /* float: left; */
+    margin-left: 30%;  }
 
 /* ===================================== About US CSS ================================== */
 footer {
@@ -447,10 +453,11 @@ footer {
           border-radius: 0px;
           height: 47px; }
   footer .footer-copy {
+    margin-left: 20%;
     padding: 30px 0px;
     color: #FFF;
-    margin-top: 35px;
-    border-top: 1px solid #fd8c90;
+    margin-top: 70px;
+    border-top: 1px solid #f8f6f6;
     padding-bottom: 0px; }
     footer .footer-copy a {
       color: #ccc; }
@@ -461,7 +468,7 @@ footer {
       float: right; }
       footer .footer-copy .socila-link ul li {
         float: left;
-        padding: 0px 20px; }
+        padding: 0px 5px; }
         footer .footer-copy .socila-link ul li a {
           color: #fff; }
 
